@@ -1,0 +1,52 @@
+<html><head>
+        <style>
+            .square{
+                background-color: blue;
+                width: 200px;
+                height: 200px;
+            }
+            #playarea{
+                background-color: gray;
+                width: 1000px;
+                height: 1000px;
+            }
+            #count{
+                background-color: #d1d1d1;
+                height: 40px;
+                width: 100px;
+		float: right;
+            }
+	    #timer{
+                background-color: #d1d1d1;
+                height: 40px;
+                width: 100px;
+		float: left;
+            }
+        </style>
+        <title>Minesweeper sandbox</title>
+    	<script>
+        	function changeToOne(id) {
+            	getElementByID(id).innerHTML = 1;
+        	}
+        	function makeGray(id) {
+            	getElementByID(id).style.background-color = "#d1d1d1";
+        	}
+    		function addNew(){
+    	    	var box = document.getElementById("playarea");
+    	    	var newSq = document.createElement("object");
+    	    	newSq.className = "square";
+    	    	box.append(newSq);
+    		}
+        </script>
+    </head>
+    <body>
+        <div id="playarea">
+            <object class="square"></object>
+            <object class="square"></object>
+
+            <object class="square"></object>
+        <object class="square"></object></div>
+        <div id="count" onclick="addNew()"></div>
+    
+
+</body></html>
