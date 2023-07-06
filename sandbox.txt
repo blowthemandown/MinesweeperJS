@@ -26,10 +26,10 @@
         <title>Minesweeper sandbox</title>
     	<script>
         	function changeToOne(id) {
-            	getElementByID(id).innerHTML = 1;
+            	getElementById(id).innerHTML = 1;
         	}
         	function makeGray(id) {
-            	getElementByID(id).style.background-color = "#d1d1d1";
+            	getElementById(id).style.background-color = "#d1d1d1";
         	}
     		function addNew(){
     	    	var box = document.getElementById("playarea");
